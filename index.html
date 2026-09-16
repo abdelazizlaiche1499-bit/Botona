@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bouton</title>
+
+    <style>
+        #bouton {
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4b6cb7">
+<link rel="apple-touch-icon" href="icon.png"></head>
+
+<body>
+
+    <button id="bouton" onclick="changerCouleur()">
+        Cliquez-moi
+    </button>
+
+    <script>
+        function changerCouleur() {
+            document.getElementById("bouton").style.backgroundColor = "yellow";
+            document.getElementById("bouton").style.color = "black";
+        }
+    </script>
+
+
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));}</script>
+</body>
+</html>
